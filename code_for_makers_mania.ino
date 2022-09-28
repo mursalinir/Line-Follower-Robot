@@ -1,3 +1,4 @@
+//initialization of Arduino pin
 int m_l,s0,s1,s2,s3,s4,m_r;
 int sensval=450;
 int rig_m_f=2;
@@ -12,6 +13,7 @@ int max_speed=60;
 int turn_speed=90;
 int motorstop_time;
 
+//setup arduino pin
 void setup()
 {
   Serial.begin(9600);
@@ -30,6 +32,7 @@ void setup()
 starting_speed();
   
 }
+//main function
 void loop()
 {
   analog_read();
